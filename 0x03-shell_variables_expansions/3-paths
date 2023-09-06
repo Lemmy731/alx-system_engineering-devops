@@ -1,2 +1,2 @@
 #!/bin/bash
-IFS=':' read -ra path_dirs <<< "$PATH"
+echo $((`echo $PATH | grep -o ":/" | wc -l`+ 1))

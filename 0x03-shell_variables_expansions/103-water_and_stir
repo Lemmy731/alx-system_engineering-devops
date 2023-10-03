@@ -1,0 +1,2 @@
+#!/bin/bash
+echo "$((0x$WATER + 0x$STIR))" | tr '[:xdigit:]' '0123456789abcdef'

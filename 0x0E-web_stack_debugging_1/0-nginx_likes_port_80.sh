@@ -1,8 +1,4 @@
 #!/usr/bin/env bash
-# Script: 0-configure_nginx_port_80.sh
-# Description: Configures Nginx to listen on port 80
-# Usage: ./0-configure_nginx_port_80.sh
-
 
 # Check if the "listen 80 default_server;" line is present and correctly configured in the default site configuration file
 if ! grep -q "listen 80 default_server;" /etc/nginx/sites-enabled/default; then
